@@ -70,3 +70,27 @@ li {
   padding: 1rem;
   font-size: 2rem;
 }
+
+li a {
+  color: #fff;
+  font-family: "Patua One", sans-serif;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem;
+  margin-top: 0;
+  padding: 0;
+  grid-gap: 1rem;
+}
+
+figure {
+  margin: 0;
+}
+
+h2 {
+  color: #30658d;
+  font-family: "Patua One", sans-serif;
+}
