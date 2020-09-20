@@ -60,3 +60,13 @@ header nav {
   grid-column: 3;
   grid-row: 1;
 } */
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  padding: 1rem;
+  font-size: 2rem;
+}
