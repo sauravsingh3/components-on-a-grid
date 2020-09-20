@@ -1,11 +1,20 @@
 html {
   box-sizing: border-box;
+  font-family: Georgia,serif;
+  background-color: #f2f1ed;
+  line-height: 1.5;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  grid-template-areas: "banner banner" "main main";
 }
 
 img {
@@ -15,4 +24,39 @@ img {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+  grid-area: banner;
+  margin: 1rem;
+  position: relative;
 }
+
+header img {
+  display: block;
+  padding: 1rem;
+}
+
+header h1 {
+  position: absolute;
+  transform: translate(100%, -511%);
+}
+
+/* header {
+  grid-area: banner;
+  display: grid;
+  grid-template-columns: 14rem 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 1rem;
+}
+header img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+header h1 {
+  grid-column: 1;
+  grid-row: 3;
+  z-index: 1;
+  margin: 1rem;
+}
+header nav {
+  grid-column: 3;
+  grid-row: 1;
+} */
