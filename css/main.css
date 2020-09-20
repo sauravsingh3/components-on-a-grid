@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: Georgia,serif;
+  font-family: Georgia, serif;
   background-color: #f2f1ed;
   line-height: 1.5;
 }
@@ -35,6 +35,12 @@ header img {
 }
 
 header h1 {
+  position: absolute;
+  transform: translate(10%, 410%);
+  width: 14rem;
+}
+
+header nav {
   position: absolute;
   transform: translate(100%, -511%);
 }
